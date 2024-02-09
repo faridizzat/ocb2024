@@ -3,152 +3,319 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register your Book</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <div class="container">
-        <div>
-          <img src="img/logo.png" alt="logo" />
+
+  <body class="p-1">
+    <!-- header -->
+    <div
+      class="background container-md my-3 px-2 py-3 rounded-4"
+    >
+      <!-- LOGO -->
+      <div>
+        <a href="#">
+          <img src="/img/logo.png" alt="logo" />
+        </a>
+      </div>
+    </div>
+
+    <!-- main -->
+
+    <div class="background container-md my-3 px-2 py-3 rounded-4">
+      <!-- Head -->
+      <h4 class="fw-bold py-1">REGISTER YOUR BOOK</h4>
+
+      <!-- Sub-Head -->
+
+      <div class="mb-3 row">
+        <div class="col-4 col-md-2">Book Details</div>
+        <div class="col-8 col-md-6">
+          <hr class="line" />
         </div>
       </div>
-    </header>
-    <main>
-      <div class="container">
-        <div id="subheader">REGISTER YOUR BOOK</div>
-        <div id="form-container">
-          <div class="sub-title">
-            <div>Book details</div>
-            <div class="line"></div>
+
+      <!-- FORM -->
+      <form>
+        <!-- Title -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="title" class="form-label">Title</label>
           </div>
-          <form>
-            <label for="title">Title</label>
+          <div class="col-8 col-md-6">
             <input
               type="text"
+              class="form-control"
               id="title"
               name="title"
               placeholder="Your book title here. E.g. Harry Potter and The Fantastic Bootcamp"
             />
-          </form>
-          <form>
-            <label for="genre">Genre</label>
+          </div>
+        </div>
+
+        <!-- Genre -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="genre" class="form-label">Genre</label>
+          </div>
+          <div class="col-8 col-md-6">
             <input
               type="text"
+              class="form-control"
               id="genre"
               name="genre"
               placeholder="Your book genre here. E.g. Fantasy"
             />
-          </form>
-          <form>
-            <label for="author">Author</label>
+          </div>
+        </div>
+
+        <!-- Author -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="author" class="form-label">Author</label>
+          </div>
+          <div class="col-8 col-md-6">
             <input
               type="text"
+              class="form-control"
               id="author"
               name="author"
               placeholder="Your book author here. E.g. J. K. Rowling"
             />
-          </form>
-          <form>
-            <label for="publisher">Publisher</label>
+          </div>
+        </div>
+
+        <!-- Publisher -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="publisher" class="form-label">Publisher</label>
+          </div>
+          <div class="col-8 col-md-6">
             <input
               type="text"
+              class="form-control"
               id="publisher"
               name="publisher"
               placeholder="Publisher of the book. E.g. Pustaka Melang"
             />
-          </form>
-          <form>
-            <label for="year-published">Year Published</label>
+          </div>
+        </div>
+
+        <!-- Year Published -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="year-published" class="form-label"
+              >Year Published</label
+            >
+          </div>
+          <div class="col-8 col-md-6">
             <input
               type="text"
+              class="form-control"
               id="year-published"
               name="year-published"
               placeholder="1994"
             />
-          </form>
-          <form id="radio">
-            <p>Availability</p>
-            <div>
-              <input type="radio" name="availability" id="availability" />
-              <label for="availability">Online</label>
-            </div>
-            <div>
-              <input type="radio" name="availability" id="availability" />
-              <label for="availability">In Store</label>
-            </div>
-            <div>
-              <input type="radio" name="availability" id="availability" />
-              <label for="availability">Online & In Store</label>
-            </div>
-          </form>
-          <form>
-            <label for="pages">Pages</label>
-            <input type="text" id="pages" name="pages" placeholder="514" />
-          </form>
-          <form>
-            <label for="language">Language</label>
+          </div>
+        </div>
+
+        <!-- Availability /Radio  -->
+
+        <div class="mb-3 row">
+          <div class="col-3 col-md-2">
+            <label for="Avaiability" class="form-label">Availability</label>
+          </div>
+          <div class="form-check col-3 col-md-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Online
+            </label>
+          </div>
+          <div class="form-check col-3 col-md-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              In Store
+            </label>
+          </div>
+
+          <div class="mb-3 form-check col-3">
+            <input
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Online & In Store</label
+            >
+          </div>
+        </div>
+
+        <!-- Pages -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="pages" class="form-label">Pages</label>
+          </div>
+          <div class="col-8 col-md-6">
             <input
               type="text"
+              class="form-control"
+              id="pages"
+              name="pages"
+              placeholder="514"
+            />
+          </div>
+        </div>
+
+        <!-- Language -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="language" class="form-label">Language</label>
+          </div>
+          <div class="col-8 col-md-6">
+            <input
+              type="text"
+              class="form-control"
               id="language"
               name="language"
               placeholder="Language used in the book. E.g. English"
             />
-          </form>
-          <div class="sub-title">
-            <div>Registree details</div>
-            <div class="line"></div>
           </div>
-          <form>
-            <label for="name">Name</label>
+        </div>
+
+        <!-- Sub-Head -->
+
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">Registree Details</div>
+          <div class="col-8 col-md-6">
+            <hr class="line" />
+          </div>
+        </div>
+
+        <!-- Name -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="name" class="form-label">Name</label>
+          </div>
+          <div class="col-8 col-md-6">
             <input
               type="text"
+              class="form-control"
               id="name"
               name="name"
               placeholder="Your name. E.g. Lannah Yeon"
             />
-          </form>
-          <form>
-            <label for="email">Email</label>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3 row">
+          <div class="col-4 col-md-2">
+            <label for="email" class="form-label">Email</label>
+          </div>
+          <div class="col-8 col-md-6">
             <input
               type="text"
+              class="form-control"
               id="email"
               name="email"
               placeholder="Your email. E.g. l.yeon@email.com"
             />
-          </form>
-          <form action="">
-            <div id="checkbox">
-              <input type="checkbox" id="agree" name="agree" />
-              <label for="agree"
-                >I hereby agree to follow all rules and confirmed that all
-                details are accurate</label
-              >
+          </div>
+        </div>
+
+        <!-- checkbox -->
+        <div class="mb-3 form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label col col-md-8" for="flexCheckDefault">
+            I hereby agree to follow all rules and confirmed that all details
+            are accurate.
+          </label>
+        </div>
+
+        <!-- Button -->
+        <div class="mb-3 row">
+          <div class="col-12 col-md-8">
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary text-dark p-2">
+                SAVE YOUR BOOK
+              </button>
             </div>
-          </form>
-          <button>SAVE YOUR BOOK</button>
+          </div>
+        </div>
+        <!-- end of Button -->
+      </form>
+    </div>
+
+    <!-- footer -->
+
+    <!-- TOP -->
+    <div
+      class="container-fluid background d-flex justify-content-between align-items-center"
+    >
+      <!-- LOGO -->
+      <div class="px-1 py-4">
+        <a href="#">
+          <img src="/img/logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <!-- Social Media -->
+      <div class="px-1 py-4">
+        <a href="#">
+          <img src="/img/Social media.svg" alt="social media" />
+        </a>
+      </div>
+    </div>
+
+    <!-- end of TOP -->
+
+    <!-- BOTTOM -->
+    <footer class="container-fluid background-2">
+      <div class="row">
+        <div class="col-6 col-lg-2 text-start text-lg-start pt-3 pt-lg-3">
+          <p class="font-size-smaller">Terms and conditions</p>
+        </div>
+        <div class="col-6 col-lg-2 text-end text-lg-start pt-3 pt-lg-3">
+          <p class="font-size-smaller">Privacy policy</p>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-4 text-start text-lg-end pt-lg-3">
+          <p class="font-size-smaller">+44 1332 412251</p>
+        </div>
+        <div class="col-6 col-lg-2 text-end text-lg-end pt-lg-3">
+          <p class="font-size-smaller">support@bbookshelf.com</p>
         </div>
       </div>
-    </main>
+    </footer>
   </body>
-  <footer>
-    <div class="footer-top">
-      <img src="img/logo.png" alt="Logo" />
-      <img src="img/Social media.svg" alt="social media" />
-    </div>
-    <div class="footer-bottom">
-      <div id="left">
-        <div>Terms and conditions</div>
-        <div>Privacy policy</div>
-      </div>
-      <div id="right">
-        <div>+44 1332 412251</div>
-        <div>support@bbookshelf.com</div>
-      </div>
-    </div>
-  </footer>
 </html>
